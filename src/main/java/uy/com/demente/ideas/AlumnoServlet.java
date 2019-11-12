@@ -12,8 +12,8 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.json.JSONObject;
 
-@WebServlet("/alumno")
-public class AlumnoServlet extends HttpServlet {
+@WebServlet("/person")
+public class PersonServlet extends HttpServlet {
 
 	private static final long serialVersionUID = 1L;
 
@@ -26,12 +26,12 @@ public class AlumnoServlet extends HttpServlet {
 
 		String json = request.getReader().lines().collect(Collectors.joining(System.lineSeparator()));
 		JSONObject obj = new JSONObject(json);
+		
 		String paramId = obj.getString(PARAM_ID);
-		String paramName = obj.getString(PARAM_NAME);
-
 		Integer id = Integer.parseInt(paramId);
-
 		System.out.println("Param id: " + id);
+		
+		String paramName = obj.getString(PARAM_NAME);
 		System.out.println("Param name: " + paramName);
 
 		cacheHelper.add(id, paramName);
@@ -46,12 +46,11 @@ public class AlumnoServlet extends HttpServlet {
 
 		String paramId = request.getParameter(PARAM_ID);
 		Integer id = Integer.parseInt(paramId);
-
 		System.out.println("Param id: " + id);
+		
 		String data = cacheHelper.get(id);
 
 		PrintWriter pw = response.getWriter();
-
 		pw.println("<html>");
 		pw.println("<body>");
 		pw.println(data);
