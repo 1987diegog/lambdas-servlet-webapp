@@ -3,10 +3,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>uy.com.demente.ideas</groupId>
-	<artifactId>lambdas-servlet-webapp</artifactId>
+	<artifactId>servlet-cache-webapp</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>lambdas-servlet-webapp Maven Webapp</name>
+	<name>servlet-cache-webapp Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
@@ -61,7 +61,7 @@
 				<groupId>org.wildfly.plugins</groupId>
 				<artifactId>wildfly-maven-plugin</artifactId>
 				<configuration>
-					<hostname>10.100.4.71</hostname>
+					<hostname>localhost</hostname>
 					<archive>
 						<manifestFile>META-INF/MANIFEST.MF</manifestFile>
 					</archive>

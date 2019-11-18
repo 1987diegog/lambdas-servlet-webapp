@@ -17,8 +17,8 @@ public class PersonServlet extends HttpServlet {
 
 	private static final long serialVersionUID = 1L;
 
-	private final static String PARAM_ID = "paramId";
-	private final static String PARAM_NAME = "paramName";
+	private final static String PARAM_ID = "id";
+	private final static String PARAM_NAME = "name";
 
 	public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
