@@ -4,7 +4,7 @@ Se utiliza un *Servlet* para realizar peticiones, las cuales retornaran la infor
 ## Servicios
 ### POST
 
-    /servlet-cache-webapp/person
+    /servlet-cache-webapp/persons
 
     {
      "id":"1", 
@@ -13,19 +13,20 @@ Se utiliza un *Servlet* para realizar peticiones, las cuales retornaran la infor
 
 ###  GET
 
-    /servlet-cache-webapp/person?id=1
+    /servlet-cache-webapp/persons?id=1
 
-## Resumen
+## Avance del proyecto
 
-- *Servidor de aplicaciones*
-**wildfly-16.0.0.Final**
+    50%
 
-- *Cache*
-**Ehcache**
+## Tecnologías utilizadas
 
-- *JEE*
-**Java 8**
-**Servlert 3.1**
+- **Servidor de aplicaciones**
+    - Wildfly 16.0.0.Final
 
-- *TDD*
-**Junit**
+- **Cache**
+    - Ehcache
+
+- **JEE**
+	- Java 8
+	- Servlert 3.1
