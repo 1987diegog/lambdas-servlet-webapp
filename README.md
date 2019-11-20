@@ -22,11 +22,11 @@ Se utiliza un *Servlet* para realizar peticiones, las cuales retornaran la infor
 ## Tecnologías utilizadas
 
 - **Servidor de aplicaciones**
-- wildfly-16.0.0.Final
+    wildfly-16.0.0.Final
 
 - **Cache**
-- Ehcache
+    Ehcache
 
 - **JEE**
-- Java 8
-- Servlert 3.1
+    Java 8
+    Servlert 3.1
