@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.json.JSONObject;
 
-@WebServlet("/person")
+@WebServlet("/persons")
 public class PersonServlet extends HttpServlet {
 
 	private static final long serialVersionUID = 1L;
