@@ -4,7 +4,7 @@ Se utiliza un *Servlet* para realizar peticiones, las cuales retornaran la infor
 ## Servicios
 ### POST
 
-    /servlet-cache-webapp/person
+    /servlet-cache-webapp/persons
 
     {
      "id":"1", 
@@ -13,7 +13,7 @@ Se utiliza un *Servlet* para realizar peticiones, las cuales retornaran la infor
 
 ###  GET
 
-    /servlet-cache-webapp/person?id=1
+    /servlet-cache-webapp/persons?id=1
 
 ## Avance del proyecto
 
